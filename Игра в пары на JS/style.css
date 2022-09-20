@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 40px;
+    width: 480px;
+}
+
+.card {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    font-size: 0px;
+    text-align: center;
+    color: white;
+    background-color: darkslategray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-open {
+    font-size: 30px;
+    pointer-events: none;
+}
+
+.card-double {
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    font-size: 30px;
+    text-align: center;
+    color: rgb(26, 24, 24);
+    background-color: rgb(137, 223, 223);
+    border-radius: 5px; 
+    pointer-events: none;
+}
+
+.btn {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 20px 50px;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(227, 234, 236);
+    background-color: rgb(173, 42, 42);
+    border-radius: 5px;
+    border: transparent;
+    cursor: pointer;
+}

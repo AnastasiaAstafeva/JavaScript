@@ -1,0 +1,934 @@
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
+      url('../fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+      url('../fonts/OpenSans-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-SemiBold.woff2') format('woff2'),
+      url('../fonts/OpenSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: 'OpenSans', sans-serif;
+    background-color: #F5F5F5;
+}
+
+.body-background {
+    width: 100%;
+    height: 200%;
+    position: absolute;
+    z-index: 1;
+    background-color: rgb(51, 51, 51, 60%);
+}
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.search {
+    margin-bottom: 40px;
+    height: 90px;
+    background-color: #fff;
+}
+
+.container-search {
+    height: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 53px;
+}
+
+.search-input {
+    height: 44px;
+    width: 70%;
+    padding-left: 15px;
+    border: 1px solid rgba(51, 51, 51, 0.2);
+}
+
+.search-input::placeholder {
+    font-size: 14px;
+    color: #B0B0B0;
+}
+
+.search-input:focus-visible {
+    outline: none;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.table {
+    width: 100%;
+}
+
+.table td {
+    border: none;
+}
+
+.heading-tadle {
+    padding-left: 20px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    color: #B0B0B0;
+}
+
+.heading-tadle svg {
+    margin-bottom: -2px;
+}
+
+.heading-tadle-rotate svg {
+    margin-bottom: -2px;
+    transform: rotate(180deg);
+}
+
+.heading-tadle-btn {
+    padding: 0;
+    text-align: left;
+    font-size: 12px;
+    font-weight: normal;
+    color: #B0B0B0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.heading-tadle-btn:focus {
+    outline: none;
+}
+
+.filter-direction {
+    margin-left: -4px;
+    font-size: 10px;
+    color: #9873FF;
+}
+
+.rowTable {
+    height: 60px;
+    background-color: white;
+    border-bottom: 2px solid #F5F5F5;
+}
+
+.table td {
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    color: #333333;
+}
+
+.table td, .table th {
+    border-top: none;
+    border-bottom: none;
+}
+
+.table thead th {
+    border-bottom: none;
+    padding-bottom: 7px;
+}
+
+.time {
+    padding-left: 5px;
+    color: #B0B0B0;
+    font-size: 14px;
+}
+
+.contacts-wrapper {
+    width: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 60px;
+}
+
+.icon-tel {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../image/phone.svg');
+    background-color: transparent;
+    border: none;
+}
+
+.icon-vk {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../image/vk.svg');
+    background-color: transparent;
+    border: none;
+}
+
+.icon-fb {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../image/fb.svg');
+    background-color: transparent;
+    border: none;
+}
+
+.icon-email {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../image/mail.svg');
+    background-color: transparent;
+    border: none;
+}
+
+.icon-other {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 16px;
+    height: 16px;
+    background-image: url('../image/Subtract.svg');
+    background-color: transparent;
+    border: none;
+}
+
+.icon-open {
+    display: inline-block;
+    margin-bottom: 5px;
+    width: 16px;
+    height: 16px;
+    padding: 0;
+    border: 1px solid #9873FF;
+    border-radius: 100%;
+    font-size: 8px;
+    text-align: center;
+}
+
+.button-change {
+    margin-right: 30px;
+    padding-left: 14px;
+    background-image: url(../image/change.svg);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-change:hover {
+    color: #9873FF;
+}
+
+.button-change:active {
+    color: #9873FF;
+}
+
+.button-change:focus {
+    outline: none;
+}
+
+.button-delete {
+    padding-left: 14px;
+    background-image: url(../image/delete.svg);
+    background-size: 12px;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button-delete:hover {
+    color: #F06A4D;
+}
+
+.button-delete:active {
+    color: #F06A4D;
+}
+
+.button-delete:focus {
+    outline: none;
+}
+
+.btn-client-app {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding: 12px 25px;
+    background-color: transparent;
+    border: 1px solid #9873FF;
+    color: #9873FF;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn-client-app:hover {
+    background-color: #B89EFF;
+    border: 1px solid #9873FF;
+    color: #fff;
+    outline: none;
+}
+
+.btn-client-app:hover svg path {
+    fill: #fff;
+}
+
+.btn-client-app:active {
+    background-color: #8052FF;
+    border: 1px solid #9873FF;
+    color: #fff;
+}
+
+.btn-client-app:active svg path {
+    fill: #fff;
+}
+
+.form {
+    position: absolute;
+    z-index: 2;
+    left: 25%;
+    width: 450px;
+    min-height: 400px;
+    padding: 24px 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.form-close {
+    display: none;
+}
+
+.form-heading {
+    margin-bottom: 30px;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.btn-form-close {
+    position: absolute;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../image/form-close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-form-close:hover {
+    outline: none;
+}
+
+.input-form {
+    margin-bottom: 30px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #C8C5D1;
+}
+
+.input-form:focus-visible {
+    outline: none;
+}
+
+.input-form::placeholder {
+    font-size: 14px;
+    color: #B0B0B0;
+}
+
+.input-lbl-s {
+    position: absolute;
+    left: 21.5%;
+    font-size: 12px;
+    color: #9873FF;
+}
+
+.input-lbl-n {
+    position: absolute;
+    left: 14.2%;
+    font-size: 12px;
+    color: #9873FF;
+}
+
+.input-lbl-l {
+    position: absolute;
+    left: 21.5%;
+    font-size: 12px;
+    color: #9873FF;
+}
+
+.btn-form-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 450px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-form-contact svg {
+    margin-right: 4px;
+    height: 13px;
+    width: 13px;
+    padding: 1px;
+    border: 1px solid #9873FF;
+    border-radius: 100%;
+}
+
+.btn-form-contact:hover {
+    color: #9873FF;
+}
+
+.btn-form-contact:hover svg {
+    background-color: #9873FF;
+    border-radius: 100%;
+}
+
+.btn-form-contact:hover svg path{
+    stroke: #fff;
+}
+
+.btn-form-contact:focus {
+    outline: none;
+}
+
+.btn-form-contact:active {
+    color: #9873FF;
+}
+
+.btn-form-contact:active svg {
+    background-color: #9873FF;
+    border-radius: 100%;
+}
+
+.btn-form-contact:active svg path{
+    stroke: #fff;
+}
+
+.btn-form {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 5px;
+    padding:12px 35px;
+    font-size: 14px;
+    background-color: #9873FF;
+    border: 1px solid #9873FF;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-form:disabled {
+    background-color: transparent;
+    border: 1px solid #C8C5D1;
+    color: #C8C5D1;
+}
+
+.btn-form:hover {
+    background-color: #B89EFF;
+    border: 1px solid #9873FF;
+    color: #fff;
+    outline: none;
+}
+
+.btn-form:active {
+    background-color: #8052FF;
+    border: 1px solid #9873FF;
+    color: #fff;
+}
+
+.btn-form:focus {
+    outline: none;
+}
+
+.btn-form-change {
+    width: 150px;
+    margin: auto;
+    margin-bottom: 5px;
+    padding:12px 35px;
+    font-size: 14px;
+    background-color: #9873FF;
+    border: 1px solid #9873FF;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-form-change:hover {
+    background-color: #B89EFF;
+    border: 1px solid #9873FF;
+    color: #fff;
+    outline: none;
+}
+
+.btn-form-change:active {
+    background-color: #8052FF;
+    border: 1px solid #9873FF;
+    color: #fff;
+}
+
+.btn-form-change:focus {
+    outline: none;
+}
+
+.btn-form-cancel {
+    margin: auto;
+    padding: 0;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #B0B0B0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-form-cancel:focus {
+    outline: none;
+}
+
+.form-contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    margin-left: -30px;
+    margin-bottom: 25px;
+    background-color: rgba(200, 197, 209, 20%);
+}
+
+.form-contact-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.form-contacnt-input {
+    position: relative;
+    margin-right: -1px;
+    padding: 8px 12px;
+    height: 36px;
+    width: 267px;
+    background-color: transparent;
+    border: 1px solid #C8C5D1;
+    border-radius: 0%;
+    font-size: 14px;
+}
+
+.form-contacnt-input:focus-visible {
+    border: 1px solid #C8C5D1;
+    outline: none;
+}
+
+.contact-btn-delete {
+    display: block;
+    position: absolute;
+    right: 30px;
+    z-index: 5;
+    width: 27px;
+    height: 36px;
+    background-color: #E7E5EB;
+    border: 1px solid #C8C5D1;
+    background-image: url(../image/contactdelete.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.contact-btn-delete:hover {
+    background-image: url(../image/contactdelete-active.svg); 
+    border: 1px solid #F06A4D
+}
+
+.contact-btn-delete:active {
+    background-image: url(../image/contactdelete-active.svg); 
+    border: 1px solid #F06A4D
+}
+
+.contact-btn-delete:focus {
+    outline: none;
+}
+
+.choices {
+    width: 123px;
+    height: 36px;
+    margin-right: -1px;
+    margin-bottom: 0;
+}
+
+.choices__inner {
+    width: 123px;
+    min-height: 36px;
+    background-color: #E7E5EB;
+    border-radius: 0;
+    border: 1px solid #C8C5D1;
+}
+
+.is-open .choices__inner {
+    border-radius: 0;
+}
+
+.choices__list--dropdown {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.choices__list--single {
+    padding: 0;
+}
+
+.choices__input {
+    padding: 0;
+    border: none;
+}
+
+.choices[data-type*=select-one]:after {
+    content: '';
+    border: none;
+    background-image: url(../image/choices-close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 16px;
+    top: 43%;
+    margin-top: 0;
+}
+
+.choices[data-type*=select-one].is-open:after {
+    content: '';
+    border: none;
+    background-image: url(../image/choices-open.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    z-index: 2;
+    right: 16px;
+    top: 40%;
+    margin-top: 0;
+}
+
+.choices__inner  {
+    font-size: 12px;
+    color: #333;
+}
+
+.choices__list--dropdown .choices__item {
+    padding-right: 0%;
+    font-size: 12px;
+    color: #333;
+}
+
+.choices__list {
+    background-color: #E7E5EB;
+}
+
+.is-open .choices__list--dropdown {
+    border: 1px solid #C8C5D1;;
+}
+
+.is-open .choices__inner {
+    position: relative;
+    z-index: 2;
+    border: 1px solid #C8C5D1;
+}
+
+.is-open .choices__item--choice:first-child {
+    display: none;
+}
+
+.form-alert {
+    margin: auto;
+    padding-top: 10px;
+    width: 60%;
+    text-align: center;
+    font-size: 10px;
+    color: #F06A4D;
+}
+
+.message {
+    font-size: 10px;
+    color: #B0B0B0;
+}
+
+.message-span {
+    font-size: 10px;
+    color: #9873FF;
+}
+
+.form-change-wrapper {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+  
+.form-change-heading {
+    margin-right: 10px;
+    margin-bottom: 0px;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.id-client {
+    display: block;
+    font-size: 12px;
+    color: #B0B0B0;
+}
+
+.btn-form-delete {
+    width: 115px;
+    display: block;
+    margin: auto;
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #B0B0B0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.delete-client {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: 3;
+    top: 30%;
+    left: 25%;
+    width: 450px;
+    height: 215px;
+    background-color: #fff;
+    padding-top: 22px;
+}
+
+.delete-client-heading {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;  
+}
+
+.delete-client-text {
+    margin-bottom: 25px;
+    width: 60%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.delete-client-btn {
+    margin-bottom: 5px;
+    padding: 12px 35px;
+    font-size: 14px;
+    background-color: #9873FF;
+    border: 1px solid #9873FF;
+    color: white;
+    cursor: pointer;
+}
+
+.delete-client-btn:hover {
+    background-color: #B89EFF;
+    border: 1px solid #9873FF;
+    color: #fff;
+    outline: none;
+}
+
+.delete-client-btn:active {
+    background-color: #8052FF;
+    border: 1px solid #9873FF;
+    color: #fff;
+}
+
+.delete-client-btn:focus {
+    outline: none;
+}
+
+.delete-client-cancel {
+    font-size: 12px;
+    border: none;
+    border-bottom: 1px solid #B0B0B0;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.delete-client-cancel:focus {
+    outline: none;
+}
+
+.delete-client-close {
+    position: absolute;
+    top: 17px;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    background-image: url(../image/form-close.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.delete-client-close:focus {
+    outline: none;
+}
+
+.visuality-hidden {
+    display: none;
+    margin: 0;
+}
+
+@media (max-width: 1100px) and (min-width: 1000px) {
+    .container {
+      padding-left: 20px;
+      padding-right: 20px;
+      width: 100%;
+    }
+}
+
+@media (max-width: 999px) and (min-width: 750px) {
+    .container {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .heading-tadle {
+        padding-left: 10px;
+    }
+
+    .table td {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .time {
+        display: block;
+        padding-left: 0;
+    }
+}
+
+
+@media (max-width: 749px) and (min-width: 600px) {
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow-x: auto;
+    }
+
+    .table {
+        min-width: 728px;
+    }
+
+    .form {
+        left: 20%;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 500px) {
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow-x: auto;
+    }
+
+    .table {
+        min-width: 728px;
+    }
+
+    .form {
+        left: 10%;
+    }
+}
+
+@media (max-width: 499px) and (min-width: 300px) {
+    .container {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        overflow-x: auto;
+    }
+
+    .table {
+        min-width: 728px;
+    }
+
+    .form {
+        width: 300px;
+        left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .form-contacts-wrapper {
+        width: 300px;
+        margin-left: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .btn-form-contact {
+        width: 300px;
+        margin-left: -10px;
+    }
+
+    .input-lbl-s {
+        left: 25.5%;
+    }
+
+    .input-lbl-l {
+        left: 25.5%;
+    }
+
+    .choices {
+        width: 110px;
+    }
+
+    .choices__inner {
+        width: 110px;
+    }
+
+    .form-contacnt-input {
+        width: 160px;
+    }
+
+    .contact-btn-delete {
+        right: 10px;
+    }
+}
